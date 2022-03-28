@@ -80,19 +80,18 @@
       
       
     input[type=text], select {
-  width: 100%;
+  width: 400px;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  display: block;
+
   box-sizing: border-box;
 }
 
 input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
+  width: 400px;
+  background-color: rgb(255,255,255);
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -106,8 +105,12 @@ input[type=submit]:hover {
 
 #atforform {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color:rgb(0,0,0);
   padding: 20px;
+position: relative;
+        bottom: 300px;
+        left:500px;
+        font-size: 20px;
 }
       
     </style>
@@ -163,29 +166,17 @@ input[type=submit]:hover {
 <div id="atforform">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
+    <input type="text" id="fname" name="firstname" placeholder="First Name">
+<br>
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+<br>
+  
   
     <input type="submit" value="Submit">
+<br>
   </form>
 </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
   </body>
 </html>
