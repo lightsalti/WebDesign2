@@ -87,6 +87,9 @@
   display: block;
 
   box-sizing: border-box;
+      font-family: "Trebuchet MS", sans-serif;
+        color: white;
+        
 }
 
 input[type=submit] {
@@ -96,12 +99,19 @@ input[type=submit] {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  
   cursor: pointer;
+  font-family: "Trebuchet MS", sans-serif;
+        color: white;
+        
 }
 
 input[type=submit]:hover {
   background-color: pink;
+        font-family: "Trebuchet MS", sans-serif;
+        color: white;
+        
+  
 }
 
 #atforform {
@@ -109,13 +119,21 @@ input[type=submit]:hover {
   background-color:rgb(126, 141, 133);
   padding: 10px 10px 10px 10px;
 position: relative;
-      bottom: 570px;
-  left:100px;
-width:600px;
-  height:300px;
+      bottom: 600px;
+  left:125px;
+width:505px;
+  height:420px;
    font-size: 20px;
+ font-family: "Trebuchet MS", sans-serif;
+        color: white;
+        
 }
       
+      
+      #gname{
+        padding: 14px 20px;
+  margin: 8px 0;
+      height:180px;}
     </style>
   </head>
   
@@ -169,12 +187,17 @@ width:600px;
 <div id="atforform">
   <form action="/action_page.php">
     
-    <label for="fname">First Name</label >
-    <input type="text" id="fname" name="firstname" placeholder="First Name">
+   
+    <input type="text" id="fname" name="firstname" placeholder="F I R S T  N A M E">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+    
+    <input type="text" id="lname" name="lastname" placeholder="L A S T  N A M E">
 <br>
+    
+    
+     <input type="text" id="gname" name="query" placeholder="E N T E R  M E S S A G E">
+    <br>
+    
     <input type="submit" value="Submit">
   </form>
 </div>
