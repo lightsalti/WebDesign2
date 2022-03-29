@@ -77,17 +77,17 @@
         padding: 10px 20px;
         margin: 8px 0;
         display: block;
-
+        border: none;
         box-sizing: border-box;
         font-family: "Trebuchet MS", sans-serif;
         color: black;
-        
-        background-color:rgb(220, 214, 247);
+
+        background-color: rgb(220, 214, 247);
       }
 
       input[type="submit"] {
         width: 500px;
-      
+        background-color: rgb(220, 214, 247);
         color: black;
         padding: 14px 0px;
         margin: 8px 0px;
@@ -106,10 +106,10 @@
 
       #atforform {
         background-color: black;
-     
+
         position: relative;
         bottom: 600px;
-        left:1000px;
+        left: 1000px;
         width: 0px;
         max-height: 0px;
         font-size: 15px;
@@ -118,7 +118,7 @@
       }
 
       #gname {
-        padding: 14px 20px;
+        padding: 14px;
         margin: 8px 0;
         height: 150px;
       }
@@ -188,7 +188,7 @@
     </div>
 
     <div id="atforform">
-      <form action="/action_page.php">
+      <form action="/action_page.php" >
         <input
           type="text"
           id="fname"
@@ -202,17 +202,15 @@
           name="lastname"
           placeholder="L A S T  N A M E"
         />
-        
 
         <input
           type="text"
           id="gname"
           name="query"
-          placeholder="E N T E R  Q U E R I E S"
+          placeholder="E N T E R   Q U E R I E S,  O R   L E A V E   A   M E S S A G E !"
         />
-        
 
-        <input type="submit" value="S U B M I T" />
+        <input type="submit" value="S U B M I T" >
       </form>
     </div>
   </body>
