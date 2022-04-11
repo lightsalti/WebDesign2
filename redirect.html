@@ -81,87 +81,6 @@
       }
       
       
-        * {
-            box-sizing: border-box;
-        }
-
-        #content {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            transition: all .5s ease;
-        }
-
-        #holder {
-            width: 800px;
-            height: 800px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: 800px 0 0 0;
-            opacity: .99;
-        }
-
-        #arcs {
-            width: 500px;
-            height: 500px;
-        }
-
-        @keyframes spinit {
-            0% {
-                transform: rotate(0)
-            }
-            49% {
-                transform: rotate(180deg)
-            }
-            51% {
-                transform: rotate(180deg)
-            }
-            100% {
-                transform: rotate(0)
-            }
-        }
-
-        span {
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 4px;
-            margin: 0;
-            box-sizing: border-box;
-            border-radius: 50%;
-            border-style: solid;
-            border-width: 18px;
-            border-color: #c7c8b8 transparent transparent #c7c8b8;
-            animation-name: spinit;
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: cubic-bezier(.7, 0, .3, 1);
-        }
-
-        @media screen and (max-width: 1024px) {
-
-            #content {
-                transform: scale(.7);
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-
-            #content {
-                transform: scale(.5);
-            }
-        }
-
-        @media screen and (max-width: 540px) {
-            #content {
-                margin-top: -70px;
-            }
-            
-            a {letter-spacing: 20px;}
-            a:hover {letter-spacing: 22px;}
-        }
     
     </style>
   </head>
@@ -177,7 +96,22 @@
     ></iframe>
     <!--this page somehow doesn't load if I remove i-frame-->
 
-   
+    <div id="head">
+      <p>
+        <i
+          class="fa-solid fa-sun fa-spin"
+          style="--fa-animation-duration: 3.5s"
+        ></i>
+        <strong
+          >L I G H T<br />
+          S A L T I</strong
+        >
+        <i
+          class="fa-solid fa-brush fa-flip"
+          style="--fa-animation-duration: 2.5s"
+        ></i>
+      </p>
+    </div>
 
     <div>
       <ul>
@@ -208,38 +142,6 @@
         >
       </p>
     </div>
-    
-    <div id="content">
-      <p>
-        L I G H T S A L T I
-      </p>
-<div id="holder">
-<div id="arcs">
-<span> 
-  <span>
-    <span>
-      <span>
-        <span>
-          <span>
-            <span>
-              <span>
-                <span>
-                  <span>
-                    <span>
-  </span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </span>
-  </span>
- 
-</div>
-</div>
-</div>
+   
   </body>
 </html>
