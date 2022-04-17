@@ -13,19 +13,45 @@
     <title>Works</title>
 
     <style>
-      p {
+  p {
         font-family: "Trebuchet MS", sans-serif;
         color: white;
         font-size:20px;
       }
-
-      #head {
-        position: relative;
+      
+.animate-charcter
+{
+   text-transform: lowercase;
+  background-image: linear-gradient(
+    -30deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  
+      font-size: 30px;
+   position: relative;
         text-align: left;
-        padding: 0 70px 0 70px;
-        font-size: 20px;
-        top: 36px;
-      }
+        padding: 0 70px 0 90px;
+  top:40px;
+}
+      @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+      
+     
       h1 {
         font-family: "Trebuchet MS", sans-serif;
         color: white;
@@ -37,20 +63,22 @@
         background-color: black;
       }
       ul {
-        list-style-type: none;
+     
         font-family: "Trebuchet MS", sans-serif;
         color: black;
         font-size: 18px;
         text-align: right;
-        padding: 0 70px 0 70px;
+        padding: 0 70px 0 0;
+        
       }
 
       li {
         display: inline;
         position: relative;
-
-        padding: 1.5em;
+padding:0 10px 0 10px;
       }
+      
+      
       a:link {
         color: white;
         text-decoration: none;
@@ -58,15 +86,17 @@
 
       a:hover {
         background-color: rgb(251, 54, 64);
-        padding: 2px 4px 2px 4px;
+        padding: 2px 3px 2px 3px;
       }
       a:visited {
         color: white;
         text-decoration: none;
       }
 
-      #sizematch {
-        text-align:
+      #sizematch{
+        display: block;
+        margin-top: 100px;
+        
       }
     </style>
   </head>
@@ -74,22 +104,13 @@
   <body>
    
 
-    <div id="head">
-      <p>
-        <i
-          class="fa-solid fa-sun fa-spin"
-          style="--fa-animation-duration: 3.5s"
-        ></i>
-        <strong
-          >L I G H T
-          S A L T I</strong
-        >
-        <i
-          class="fa-solid fa-brush fa-flip"
-          style="--fa-animation-duration: 2.5s"
-        ></i>
-      </p>
+     <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class="animate-charcter">lightsalti</h1>
     </div>
+  </div>
+</div>
 
     <div>
       <ul>
@@ -116,6 +137,7 @@
       width="960"
       height="540"
       frameborder="0"
+             
       id="sizematch"
     ></iframe>
       </center>
