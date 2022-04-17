@@ -13,72 +13,13 @@
     <title>About</title>
 
     <style>
-      #sizematch {
-        display: block;
-        margin-top: 220px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+   
 
       #abpicsize {
         display: block;
-
-        margin-top: -450px;
-        margin-left: auto;
-        margin-right: auto;
+ margin-top: 100px;
       }
-      p {
-        font-family: "Trebuchet MS", sans-serif;
-        color: white;
-      }
-
-      #head {
-        position: relative;
-        bottom: 565px;
-        
-         text-align: left;
-        padding:0 0 0 70px;
-        font-size: 20px;
-      }
-
-      body {
-        background-color: rgb(0, 0, 0);
-      }
-     ul {
-        list-style-type: none;
-        font-family: "Trebuchet MS", sans-serif;
-        color: white;
-        font-size: 16px;
-         text-align:right;
-        padding:0 70px 0 0;
-        
-      }
-
-      li {
-        display: inline;
-        position: relative;
-        bottom: 605px;
-     padding:1.5em;
       
-       background-color: black;
-      }
-
-
-      a:link {
-        color: white;
-        text-decoration: none;
-      }
-
-      a:hover {
-        background-color: rgb(251, 54, 64);
-        color: black;
-        padding: 5px 40px 5px 40px;
-      }
-      a:visited {
-        color: white;
-        text-decoration: none;
-      }
-     
       #abpos {
         position: relative;
         bottom: -60px;
@@ -86,59 +27,122 @@
         text-align: center;
         font-family: "Arial";
       }
+      p {
+        font-family: "Trebuchet MS", sans-serif;
+        color: white;
+        font-size:20px;
+      }
+      
+.animate-charcter
+{
+   text-transform: lowercase;
+  background-image: linear-gradient(
+    -30deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  
+      font-size: 30px;
+   position: relative;
+        text-align: left;
+        padding: 0 70px 0 90px;
+  top:40px;
+}
+      @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+      
      
+      h1 {
+        font-family: "Trebuchet MS", sans-serif;
+        color: white;
+        font-size:20px;
+        
+      }
+
+      body {
+        background-color: black;
+      }
+      ul {
+     
+        font-family: "Trebuchet MS", sans-serif;
+        color: black;
+        font-size: 18px;
+        text-align: right;
+        padding: 0 70px 0 0;
+        
+      }
+
+      li {
+        display: inline;
+        position: relative;
+padding:0 10px 0 10px;
+      }
+      
+      
+      a:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: rgb(251, 54, 64);
+        padding: 2px 3px 2px 3px;
+      }
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+
     </style>
   </head>
 
   <body>
-    <iframe
-      title="art-compilation"
-      width="640"
-      height="360"
-      frameborder="0"
-      id="sizematch"
-      allowfullscreen
-    ></iframe>
-    <!--this page somehow doesn't load if I remove i-frame-->
-
-    <div id="head">
-      <p>
-        <i
-          class="fa-solid fa-sun fa-spin"
-          style="--fa-animation-duration: 3.5s"
-        ></i>
-        <strong
-          >L I G H T
-          S A L T I</strong
-        >
-        <i
-          class="fa-solid fa-brush fa-flip"
-          style="--fa-animation-duration: 2.5s"
-        ></i>
-      </p>
+    
+        
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class="animate-charcter">lightsalti</h1>
     </div>
+  </div>
+</div>
+    
     <div>
       <ul>
         <li>
-          <a href="index.html"><stong> H O M E</stong></a>
+          <a href="index.html"><stong>home</stong></a>
         </li>
         <li>
-          <a href="works.html"><stong> W O R K S</stong></a>
+          <a href="works.html"><stong>works</stong></a>
         </li>
         <li>
-          <a href="about.html"><stong> A B O U T</stong></a>
+          <a href="about.html"><stong>about</stong></a>
         </li>
         <li>
-          <a href="contact.html"><stong> C O N T A C T</stong></a>
+          <a href="contact.html"><stong>contact</stong></a>
         </li>
       </ul>
     </div>
 
-    <img
+   <center> <img
       src="https://cdn.glitch.global/11b7f8a4-f256-4927-87da-d353c21c5b56/abpic.jpg?v=1647357865593"
-      width="750px"
+      width="850px"
       id="abpicsize"
-    />
+    /></center>
 
     <p id="abpos">
       Esshac Limson (born 2004) is an independent visual and new media artist
